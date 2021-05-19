@@ -1,0 +1,17 @@
+@ViewBag.progress
+
+@if(ViewBag.Message != null)
+{
+    <div class="alert alert-success" style="margin-top:20px">
+        @ViewBag.Message
+    </div>
+}
+<script>
+        var progress = 0
+        while(@ViewBag.progress != 100 && @ViewBag.progress != 0){
+            progress = @ViewBag.progress
+            document.getElementById("progressbar").setAttribute("style", "width: " + progress +"%")
+            console.log(progress)
+        }
+    
+</script>

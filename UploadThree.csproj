@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>4c2ae654-ec1d-4c32-85a9-c13c0b932bb0</UserSecretsId>
+  </PropertyGroup>
+
+     <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="web.config" CopyToPublishDirectory="Always" />
+    </ItemGroup>
+</Project>
